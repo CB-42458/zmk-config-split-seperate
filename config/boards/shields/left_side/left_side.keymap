@@ -9,6 +9,16 @@
 		sensors = <&left_encoder>;
 	};
 
+        behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap"; 
 
@@ -23,13 +33,13 @@
 // |  CTRL   |   GUI   |   ALT   |  empty  |  SPACE  |         |  empty  |  ENTER  |
 //                                                             |  SHIFT  |   LA1   |
             bindings = <
-&kp ESC       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                &kp C_MUTE
+&kp ESC       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                &td0
 &kp DEL       &kp Q      &kp W      &kp E      &kp R      &kp T      &kp EQUAL
 &kp TAB       &kp A      &kp S      &kp D      &kp F      &kp G      &kp LBKT
 &out OUT_TOG  &kp Z      &kp X      &kp C      &kp V      &kp B
 &kp LCTRL     &kp LGUI   &kp LALT   &none      &kp SPACE             &none      &kp RET
                                                                      &kp LSHIFT &bt BT_CLR
-            >;
+                       >;
         };
     };
 };  
