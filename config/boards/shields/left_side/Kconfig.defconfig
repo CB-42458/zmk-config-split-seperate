@@ -1,6 +1,15 @@
 if SHIELD_LEFT_SIDE
 
 config ZMK_KEYBOARD_NAME
-    default "left_side"
+    default "Redox Mod Left"
+
+config CONFIG_ZMK_HID_REPORT_TYPE_NKRO
+    default y
+
+config CONFIG_BT_MAX_CONN
+    default 2
+
+config CONFIG_BT_MAX_PAIRED
+    default 5
 
 endif
