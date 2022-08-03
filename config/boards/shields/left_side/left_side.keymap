@@ -33,7 +33,7 @@
 // |  CTRL   |   GUI   |   ALT   |  empty  |  SPACE  |         |  empty  |  ENTER  |
 //                                                             |  SHIFT  |   LA1   |
             bindings = <
-&kp ESC       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                &td0
+&kp ESC       &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                &mt C_MUTE td0
 &kp DEL       &kp Q      &kp W      &kp E      &kp R      &kp T      &kp EQUAL
 &kp TAB       &kp A      &kp S      &kp D      &kp F      &kp G      &kp LBKT
 &out OUT_TOG  &kp Z      &kp X      &kp C      &kp V      &kp B
