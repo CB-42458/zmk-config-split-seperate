@@ -37,7 +37,7 @@
 &kp DEL       &kp Q      &kp W      &kp E      &kp R      &kp T      &kp EQUAL
 &kp TAB       &kp A      &kp S      &kp D      &kp F      &kp G      &kp LBKT
 &out OUT_TOG  &kp Z      &kp X      &kp C      &kp V      &kp B
-&kp LCTRL     &kp LGUI   &kp LALT   &none      &kp SPACE             &bootloader &kp RET
+&kp LCTRL     &kp LGUI   &kp LALT   &none      &kp SPACE             &reset      &kp RET
                                                                      &kp LSHIFT  &bt BT_CLR
                        >;
         };
